@@ -5,9 +5,9 @@
 @mixin make-container() {
   width: 100%;
   padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width / 2);
   margin-right: auto;
-  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -24,7 +24,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: ($grid-gutter-width / -2);
-  margin-left: ($grid-gutter-width / -2);
+  margin-right: ($grid-gutter-width / -2);
 }
 
 @mixin make-col-ready() {
@@ -35,7 +35,7 @@
   width: 100%;
   min-height: 1px; // Prevent collapsing
   padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width / 2);
 }
 
 @mixin make-col($size, $columns: $grid-columns) {
@@ -48,5 +48,5 @@
 
 @mixin make-col-offset($size, $columns: $grid-columns) {
   $num: $size / $columns;
-  margin-left: if($num == 0, 0, percentage($num));
+  margin-right: if($num == 0, 0, percentage($num));
 }

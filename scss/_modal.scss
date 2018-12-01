@@ -20,7 +20,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  right: 0;
   z-index: $zindex-modal;
   display: none;
   overflow: hidden;
@@ -86,7 +86,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  right: 0;
   z-index: $zindex-modal-backdrop;
   background-color: $modal-backdrop-bg;
 
@@ -107,7 +107,7 @@
 
   .close {
     padding: $modal-header-padding;
-    // auto on the left force icon to the right even when there is no .modal-title
+    // auto on the right force icon to the right even when there is no .modal-title
     margin: (-$modal-header-padding) (-$modal-header-padding) (-$modal-header-padding) auto;
   }
 }
@@ -132,12 +132,12 @@
 .modal-footer {
   display: flex;
   align-items: center; // vertically center
-  justify-content: flex-end; // Right align buttons with flex property because text-align doesn't work on flex items
+  justify-content: flex-end; // right align buttons with flex property because text-align doesn't work on flex items
   padding: $modal-inner-padding;
   border-top: $modal-footer-border-width solid $modal-footer-border-color;
 
   // Easily place margin between footer elements
-  > :not(:first-child) { margin-left: .25rem; }
+  > :not(:first-child) { margin-right: .25rem; }
   > :not(:last-child) { margin-right: .25rem; }
 }
 

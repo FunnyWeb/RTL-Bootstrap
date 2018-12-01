@@ -10,7 +10,7 @@
   .page-item {
     &:first-child {
       .page-link {
-        @include border-left-radius($border-radius);
+        @include border-right-radius($border-radius);
       }
     }
     &:last-child {

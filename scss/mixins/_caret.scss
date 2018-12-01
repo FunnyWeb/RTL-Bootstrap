@@ -2,24 +2,24 @@
   border-top: $caret-width solid;
   border-right: $caret-width solid transparent;
   border-bottom: 0;
-  border-left: $caret-width solid transparent;
+  border-right: $caret-width solid transparent;
 }
 
 @mixin caret-up {
   border-top: 0;
   border-right: $caret-width solid transparent;
   border-bottom: $caret-width solid;
-  border-left: $caret-width solid transparent;
+  border-right: $caret-width solid transparent;
 }
 
 @mixin caret-right {
   border-top: $caret-width solid transparent;
   border-right: 0;
   border-bottom: $caret-width solid transparent;
-  border-left: $caret-width solid;
+  border-right: $caret-width solid;
 }
 
-@mixin caret-left {
+@mixin caret-right {
   border-top: $caret-width solid transparent;
   border-right: $caret-width solid;
   border-bottom: $caret-width solid transparent;
@@ -31,7 +31,7 @@
       display: inline-block;
       width: 0;
       height: 0;
-      margin-left: $caret-width * .85;
+      margin-right: $caret-width * .85;
       vertical-align: $caret-width * .85;
       content: "";
       @if $direction == down {
@@ -43,7 +43,7 @@
       }
     }
 
-    @if $direction == left {
+    @if $direction == right {
       &::after {
         display: none;
       }
@@ -55,12 +55,12 @@
         margin-right: $caret-width * .85;
         vertical-align: $caret-width * .85;
         content: "";
-        @include caret-left;
+        @include caret-right;
       }
     }
 
     &:empty::after {
-      margin-left: 0;
+      margin-right: 0;
     }
   }
 }

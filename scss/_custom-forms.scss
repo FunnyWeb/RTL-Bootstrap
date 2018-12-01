@@ -11,7 +11,7 @@
   position: relative;
   display: block;
   min-height: ($font-size-base * $line-height-base);
-  padding-left: $custom-control-gutter;
+  padding-right: $custom-control-gutter;
 }
 
 .custom-control-inline {
@@ -64,7 +64,7 @@
   &::before {
     position: absolute;
     top: (($font-size-base * $line-height-base - $custom-control-indicator-size) / 2);
-    left: -$custom-control-gutter;
+    right: -$custom-control-gutter;
     display: block;
     width: $custom-control-indicator-size;
     height: $custom-control-indicator-size;
@@ -79,7 +79,7 @@
   &::after {
     position: absolute;
     top: (($font-size-base * $line-height-base - $custom-control-indicator-size) / 2);
-    left: -$custom-control-gutter;
+    right: -$custom-control-gutter;
     display: block;
     width: $custom-control-indicator-size;
     height: $custom-control-indicator-size;
@@ -277,7 +277,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  left: 0;
+  right: 0;
   z-index: 1;
   height: $custom-file-height;
   padding: $custom-file-padding-y $custom-file-padding-x;
@@ -301,7 +301,7 @@
     color: $custom-file-button-color;
     content: "Browse";
     @include gradient-bg($custom-file-button-bg);
-    border-left: $custom-file-border-width solid $custom-file-border-color;
+    border-right: $custom-file-border-width solid $custom-file-border-color;
     @include border-radius(0 $custom-file-border-radius $custom-file-border-radius 0);
   }
 }
@@ -314,7 +314,7 @@
 
 .custom-range {
   width: 100%;
-  padding-left: 0; // Firefox specific
+  padding-right: 0; // Firefox specific
   background-color: transparent;
   appearance: none;
 
@@ -390,7 +390,7 @@
     height: $custom-range-thumb-height;
     margin-top: 0; // Edge specific
     margin-right: $custom-range-thumb-focus-box-shadow-width; // Workaround that overflowed box-shadow is hidden.
-    margin-left: $custom-range-thumb-focus-box-shadow-width;  // Workaround that overflowed box-shadow is hidden.
+    margin-right: $custom-range-thumb-focus-box-shadow-width;  // Workaround that overflowed box-shadow is hidden.
     @include gradient-bg($custom-range-thumb-bg);
     border: $custom-range-thumb-border;
     @include border-radius($custom-range-thumb-border-radius);

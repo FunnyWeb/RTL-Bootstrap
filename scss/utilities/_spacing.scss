@@ -24,7 +24,7 @@
         }
         .#{$abbrev}l#{$infix}-#{$size},
         .#{$abbrev}x#{$infix}-#{$size} {
-          #{$prop}-left: $length !important;
+          #{$prop}-right: $length !important;
         }
       }
     }
@@ -45,7 +45,7 @@
     }
     .ml#{$infix}-auto,
     .mx#{$infix}-auto {
-      margin-left: auto !important;
+      margin-right: auto !important;
     }
   }
 }
