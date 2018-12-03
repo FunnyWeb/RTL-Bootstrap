@@ -1,14 +1,14 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
+title:        بوت استرپ فارسی
+tagline:      نسخه فارسی و راستچین بوت استرپ با فونت وزیر
 baseurl:      ""
 paginate:     1
-locale:       "en"
+locale:       "fa"
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       امید شهسوارزاده
+  url:        http://omidsh.ir 
 
 # Gems
 gems:
